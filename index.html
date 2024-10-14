@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DIS Hacks - Ethical Hacking Group</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 50px;
+            background-color: #1f1f1f;
+            border-bottom: 1px solid #333;
+        }
+
+        header img {
+            max-width: 300px;
+            height: auto;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #aaa;
+        }
+
+        /* Navigation */
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #00ff88;
+            font-size: 18px;
+        }
+
+        /* Sections */
+        section {
+            padding: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #00ff88;
+            margin-bottom: 20px;
+        }
+
+        .project {
+            margin-bottom: 40px;
+        }
+
+        .project h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #00ff88;
+        }
+
+        .project p {
+            font-size: 16px;
+            color: #bbb;
+        }
+
+        /* Contact Form */
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form label {
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+        }
+
+        form button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            background-color: #00ff88;
+            color: #121212;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        form button:hover {
+            background-color: #00cc70;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+            background-color: #1f1f1f;
+            border-top: 1px solid #333;
+        }
+
+        .stat {
+            text-align: center;
+            font-size: 36px;
+            color: #00ff88;
+        }
+
+        .stat p {
+            font-size: 18px;
+            color: #bbb;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+        }
+
+        /* Our Discord Section */
+        .discord-section {
+            text-align: center;
+            padding: 50px;
+            background-color: #1f1f1f;
+            border-top: 1px solid #333;
+        }
+
+        .discord-section a {
+            color: #00ff88;
+            font-size: 24px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .discord-section a img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1f1f1f;
+            border-top: 1px solid #333;
+            color: #aaa;
+        }
+
+        /* Hidden until animation */
+        .hidden {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://i.ibb.co/wzrpBff/Screenshot-from-2024-10-14-15-34-40.png" alt="DIS Hacks Logo">
+        <p>Ethical Hacking for a Safer Internet</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About DIS Hacks</h2>
+        <p>We are a group of ethical hackers focused on social engineering. Our group has participated in different data breaches. Our team has been  </p>
+    </section>
+
+    <section id="projects">
+        <h2>Our Projects</h2>
+        <div class="project">
+            <h3>Ongoing Projects</h3>
+            <p>AURORA Project: All-in-one phishing project with a simple UI supporting Discord webhooks. Made to choose from pre-made templates of famous websites. Inspired by BLACKEYE.</p>
+            <p>Roblox.DIS Project: A project focused on hacking using executors and scripts in the Roblox Client.</p>
+        </div>
+        <div class="project">
+            <h3>Completed Projects</h3>
+            <p>Roblox Beaming projects and partnerships.</p>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section" id="stats">
+        <div class="stat">
+            <span id="stat1" class="hidden">0</span>+
+            <p id="text1">accounts hacked from data breaches</p>
+        </div>
+        <div class="stat">
+            <span id="stat2" class="hidden">0</span>+
+            <p id="text2">accounts hacked using social engineering</p>
+        </div>
+        <div class="stat">
+            <span id="stat3" class="hidden">$0</span>
+            <p id="text3">worth of accounts</p>
+        </div>
+    </section>
+
+    <!-- Our Discord Section -->
+    <section class="discord-section" id="discord">
+        <h2>Join Our Discord</h2>
+        <a href="https://discord.gg/4TARv76CZc" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord Icon">
+            Our Discord Server
+        </a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 DIS Hacks. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Discord webhook URL
+        const webhookURL = "https://discord.com/api/webhooks/1295367207798439968/4769PhyY6avFVSihhya6new6RMo2E0VmrWqEYFH54EZTRfQ5C5-XH24K_cgtUMGT8AlO";
+
+        // Function to handle form submission
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission behavior
+
+            // Get form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Prepare message to be sent to Discord
+            const discordMessage = {
+                content: `New contact form submission:\n**Name**: ${name}\n**Email**: ${email}\n**Message**: ${message}`
+            };
+
+            // Send data to Discord webhook
+            fetch(webhookURL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(discordMessage)
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert('Message sent successfully!');
+                } else {
+                    alert('There was an error sending your message.');
+                }
+            })
+            .catch(error => {
+                alert('There was an error sending your message.');
+                console.error('Error:', error);
+            });
+        });
+
+        // Scroll animation for stats
+        function animateStats() {
+            const statsSection = document.getElementById('stats');
+            const statsPosition = statsSection.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.5;
+
+            if (statsPosition < screenPosition) {
+                let count1 = 0, count2 = 0, count3 = 0;
+                const stat1 = document.getElementById('stat1');
+                const stat2 = document.getElementById('stat2');
+                const stat3 = document.getElementById('stat3');
+                const target1 = 3300, target2 = 52800, target3 = 98000;
+
+                // Unhide stat elements
+                stat1.classList.remove('hidden');
+                stat2.classList.remove('hidden');
+                stat3.classList.remove('hidden');
+
+                // Incrementing logic for each stat
+                const interval1 = setInterval(() => {
+                    if (count1 < target1) {
+                        count1 += 10;
+                        stat1.textContent = count1;
+                    } else {
+                        clearInterval(interval1);
+                        document.getElementById('text1').style.opacity = 1;
+                    }
+                }, 10);
+
+                const interval2 = setInterval(() => {
+                    if (count2 < target2) {
+                        count2 += 50;
+                        stat2.textContent = count2;
+                    } else {
+                        clearInterval(interval2);
+                        document.getElementById('text2').style.opacity = 1;
+                    }
+                }, 10);
+
+                const interval3 = setInterval(() => {
+                    if (count3 < target3) {
+                        count3 += 100;
+                        stat3.textContent = `$${(count3 / 1000).toFixed(1)}K`;
+                    } else {
+                        clearInterval(interval3);
+                        document.getElementById('text3').style.opacity = 1;
+                    }
+                }, 10);
+
+                // Remove the event listener once animation is done
+                window.removeEventListener('scroll', animateStats);
+            }
+        }
+
+        // Add scroll event listener
+        window.addEventListener('scroll', animateStats);
+    </script>
+</body>
+</html>
